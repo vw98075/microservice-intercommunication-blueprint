@@ -20,7 +20,3 @@ To run this set of microservices, you need to have Java 14 (or 11, 8, but change
 
 curl http://localhost:8080/orders;echo;
 
-
-
-
-
