@@ -1,4 +1,4 @@
-# Microservice Intercommunication Blueprint For 2020 and beyond
+# Microservice Intercommunication Blueprint For 2020 And Beyond
 
 ## Intercommunication Types
 
@@ -14,7 +14,7 @@ RSocket (request-response, fire-and-forget, request-stream, channel) *
 
 Broadcast and subscription communication model - stream-processing software platform such as Kafka
 
-## Running The applications
+## Run The applications
 
 To run this set of four microservices, you need to have Java 14 (or 11, 8, but changes are needed in those pom files accordingly). And you also need to have Kafka running in the same box. After bringing up all four servers, you can run the following command
 ```
