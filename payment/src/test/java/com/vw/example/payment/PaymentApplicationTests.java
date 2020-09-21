@@ -8,7 +8,7 @@ import org.springframework.test.context.TestPropertySource;
 @SpringBootTest
 class PaymentApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 

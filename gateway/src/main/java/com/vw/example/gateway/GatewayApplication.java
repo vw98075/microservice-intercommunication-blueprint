@@ -1,5 +1,6 @@
 package com.vw.example.gateway;
 
+import brave.sampler.Sampler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -23,6 +24,11 @@ public class GatewayApplication {
 						)
 						.uri("http://localhost:8092"))
 				.build();
+	}
+
+	@Bean
+	public Sampler defaultSampler()    {
+		return Sampler.ALWAYS_SAMPLE;
 	}
 
 	public static void main(String[] args) {

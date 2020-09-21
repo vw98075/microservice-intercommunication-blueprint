@@ -1,5 +1,6 @@
 package com.vw.example.fulfillment;
 
+import brave.sampler.Sampler;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,11 @@ import java.time.Instant;
 @Slf4j
 @SpringBootApplication
 public class FulfillmentApplication {
+
+	@Bean
+	public Sampler defaultSampler()    {
+		return Sampler.ALWAYS_SAMPLE;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(FulfillmentApplication.class, args);

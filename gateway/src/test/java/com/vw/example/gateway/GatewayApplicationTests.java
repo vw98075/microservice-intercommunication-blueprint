@@ -8,7 +8,7 @@ import org.springframework.test.context.TestPropertySource;
 @SpringBootTest
 class GatewayApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 

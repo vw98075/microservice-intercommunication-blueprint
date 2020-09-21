@@ -1,0 +1,21 @@
+server:
+  port: 8091
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: cs
+  application:
+    name: customer-satisfaction
+  sleuth:
+    sampler:
+      probability: 100
+  zipkin:
+    baseUrl: http://localhost:9411/
+
+wavefront:
+  application:
+    name: ${spring.application.name}
+    service: customer-satisfaction
